@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Counter</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  </head>
+  <body>
+
+<br>
+<div class="container">
+  <div class="row">
+    
+
+<div class="col-md-12">
+
+
+<div class="card" style="">
+  <div class="card-header">
+    Stop Watch
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      
+
+<div class="stopwatch" data-autostart="false">
+    <div class="time">
+        <span class="hours"></span> : 
+        <span class="minutes"></span> : 
+        <span class="seconds"></span>
+        <!-- <span class="milliseconds"></span> -->
+    </div>
+    <div class="controls">
+        <br>
+        <button class="toggle btn btn-primary" data-pausetext="Pause" data-resumetext="Resume">Start</button>
+        <button class="reset btn btn-warning pull-right">Reset</button>
+    </div>
+</div>
+
+</div>
+
+    </li>
+  </ul>
+</div>
+
+
+
+</div>
+
+<br>
+
+<div class="card" style="">
+
+
+  <div class="card-header">
+    Laps Counter
+  </div>
+
+
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+     
+       <div class="form-group">
+        <label for="exampleFormControlInput1">Count</label>
+        <input type="number" class="form-control" id="jcount" min="0" value="0">
+      </div>
+
+      <button type="button" class="btn btn-secondary btn-lg" id="btn_count_plus">+</button>
+      <button type="button" class="btn btn-secondary btn-lg" id="btn_count_minus">-</button>
+
+      <br>
+      <!-- <h5 class="card-title" id="count_display">0</h5> -->
+
+
+    </li>
+  </ul>
+</div>
+
+<br>
+
+
+<div class="card" style="">
+
+  <div class="card-header">
+    Laps Speed
+  </div>
+
+
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+     
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+          <input type="radio" name="laps_speed" id="laps_per_hour" value="hour" autocomplete="off" checked> Per Hour
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="laps_speed" id="laps_per_minute" value="min" autocomplete="off"> Per Minutes
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="laps_speed" id="laps_per_seconds" value="sec" autocomplete="off"> Per Seconds
+        </label>
+      </div>
+
+
+
+      <h5 class="card-title" id="count_display">0</h5>
+
+
+    </li>
+  </ul>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+  </body>
+</html>
